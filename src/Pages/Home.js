@@ -10,6 +10,7 @@ import ClientArea from '../Components/ClientArea';
 import TeamArea from '../Components/TeamArea';
 import BlogArea from '../Components/BlogArea';
 import ContactUs from '../Components/ContactUs';
+import Navbar from '../Components/Navbar';
 
 
 export default class Home extends Component {
@@ -18,6 +19,7 @@ export default class Home extends Component {
          
         return (
             <> 
+               <Navbar></Navbar> 
                 <Slider></Slider>
                 <InfoArea></InfoArea>
                 <ServiceArea></ServiceArea>
