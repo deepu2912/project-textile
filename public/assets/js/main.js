@@ -97,37 +97,37 @@ jQuery(function ($) {
     });
 
     // Home Slider
-    $(".home-slider").owlCarousel({
-        animateOut: 'slideOutDown',
-        animateIn: 'slideInDown',
-        items: 1,
-        loop: true,
-        autoplay: false,
-        dots: false,
-        nav: true,
-        autoHeight: true,
-        autoplaySpeed: 800,
-        mouseDrag: false,
-        autoplayHoverPause: true,
-        navText: [
-            "<i class='flaticon-left-arrow'></i>", 
-            "<i class='flaticon-next-1'></i>"
-        ],
-        responsive: {
-            0: {
-                items: 1,
-            },
-            576: {
-                items: 1,
-            },
-            768: {
-                items: 1,
-            },
-            1200: {
-                items: 1,
-            }
-        }
-    });
+    // $(".home-slider").owlCarousel({
+    //     animateOut: 'slideOutDown',
+    //     animateIn: 'slideInDown',
+    //     items: 1,
+    //     loop: true,
+    //     autoplay: false,
+    //     dots: false,
+    //     nav: true,
+    //     autoHeight: true,
+    //     autoplaySpeed: 800,
+    //     mouseDrag: false,
+    //     autoplayHoverPause: true,
+    //     navText: [
+    //         "<i class='flaticon-left-arrow'></i>", 
+    //         "<i class='flaticon-next-1'></i>"
+    //     ],
+    //     responsive: {
+    //         0: {
+    //             items: 1,
+    //         },
+    //         576: {
+    //             items: 1,
+    //         },
+    //         768: {
+    //             items: 1,
+    //         },
+    //         1200: {
+    //             items: 1,
+    //         }
+    //     }
+    // });
 
     // Client Wrap
 	$('.client-wrap').owlCarousel({

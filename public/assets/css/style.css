@@ -3478,12 +3478,7 @@ Blog Area Css
 /*
 Blog Details Area Style
 =====================================================*/
-.blog-details-area {
-  /*
-	Sidebar Widget Area Style
-	================================*/
-}
-
+ 
 .blog-details-area .blog-details-desc .article-image {
   position: relative;
   background-color: #293a5c;

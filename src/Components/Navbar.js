@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 export default class Navbar extends Component {
     _onParent = (e) => {
@@ -11,9 +11,9 @@ export default class Navbar extends Component {
                 {/*Navbar Area */}
                 <div className="navbar-area">
                     <div className="mobile-nav">
-                        <a href="/" className="logo">
+                        <Link to="/" className="logo">
                             <img src="assets/images/logo.png" alt="logo" />
-                        </a>
+                          </Link>
                     </div>
                     <div className="main-nav">
                         <div className="container">
@@ -21,17 +21,17 @@ export default class Navbar extends Component {
                                 <div className="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                                     <ul className="navbar-nav text-left">
                                         <li className="nav-item">
-                                        <a href="/" className="nav-link active">Home</a>
-                                     
+                                        <NavLink to="/"  className="nav-link">Home</NavLink>
+                                        
                                         </li>
                                         <li className="nav-item">
                                      
-                                            <Link to="about"  className="nav-link">About</Link>
+                                            <NavLink to="about"  className="nav-link">About</NavLink>
                                           
                                         </li>
                                         <li className="nav-item">
 
-                                        <Link to='/solutions' className="nav-link">Solutions</Link>
+                                        <NavLink to='/solutions' className="nav-link">Solutions</NavLink>
   
                                         </li>
                                         <li className="nav-item">
