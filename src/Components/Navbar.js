@@ -35,8 +35,9 @@ export default class Navbar extends Component {
   
                                         </li>
                                         <li className="nav-item">
-                                        <Link to='/'  className="nav-link dropdown-toggle" onClick={e => this._onParent(e)}>Case Studies</Link>
-                                            {/* <a href="#" className="nav-link dropdown-toggle">Case Studies</a> */}
+                                        <NavLink to='/CaseStudies' className="nav-link">Case Studies</NavLink>
+                                        {/* <Link to='/'  className="nav-link dropdown-toggle" onClick={e => this._onParent(e)}>Case Studies</Link>
+                                
                                             <ul className="dropdown-menu">
                                                 <li className="nav-item">
                                                     <a href="case.html" className="nav-link">Case Studies</a>
@@ -44,7 +45,7 @@ export default class Navbar extends Component {
                                                 <li className="nav-item">
                                                     <a href="case-details.html" className="nav-link">Case Studies Details</a>
                                                 </li>
-                                            </ul>
+                                            </ul> */}
                                         </li>
                                         <li className="nav-item">
                                         <Link to='/'  className="nav-link dropdown-toggle" onClick={e => this._onParent(e)}>Blog</Link>
