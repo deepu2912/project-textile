@@ -24,7 +24,7 @@ export default class NotFound extends Component {
 
     render() {
 
-debugger;
+
         let button = <Link to="/" className="box-btn"> Return To Home Page </Link>;
 
         

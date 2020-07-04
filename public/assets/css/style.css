@@ -1178,6 +1178,7 @@ Slider 2 Area Css
   border-bottom-left-radius: 90px;
   height: 100vh;
   border-bottom-right-radius: 90px;
+  height: 625px;
 }
 
 .slider-area-2 .home-slider .single-slider::before {
