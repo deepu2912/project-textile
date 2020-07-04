@@ -276,7 +276,6 @@ jQuery(function ($) {
          itemSelector: '.item'
     });
     $('.all-case li').on('click', function() {
-        debugger;
         $('.all-case li').removeClass('active');
         $(this).addClass('active');
         var selector = $(this).attr('data-filter');

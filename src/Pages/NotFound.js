@@ -26,7 +26,11 @@ export default class NotFound extends Component {
 
         let button = <Link to="/" className="box-btn"> Return To Home Page </Link>;
 
-        if(this.state.width < 450){
+        
+        if(this.state.width === 0){
+            button = <a href="/" className="box-btn"> Return To Home Page  </a>;
+        } 
+        else if(this.state.width < 450){
             button = <a href="/" className="box-btn"> Return To Home Page  </a>;
         }
 
