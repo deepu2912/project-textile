@@ -1,7 +1,37 @@
 import React, { Component } from 'react'
-
+import OwlCarousel from 'react-owl-carousel';
+ 
 export default class TeamArea extends Component {
     render() {
+
+        const options = {
+            loop: true,
+        margin: 20,
+        dots: true,
+        autoplay: false,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            575: {
+                items: 2,
+            },
+            576: {
+                items: 2,
+            },
+            768: {
+                items: 3,
+            },
+            992: {
+                items: 3,
+            },
+            1200: {
+                items: 4,
+            }
+        }
+        };
+
         return (
             <>
                 {/* Team Area */}
@@ -12,8 +42,9 @@ export default class TeamArea extends Component {
                             <h2>People Who are Behind the Achievements</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
                         </div>
-                        <div className="home-team-slider owl-carousel owl-theme">
-                            <div className="single-team">
+
+                        <OwlCarousel className="home-team-slider owl-carousel owl-theme" {...options}>
+                             <div className="single-team">
                                 <div className="team-img">
                                     <img src="assets/images/team/t1.jpg" alt="team" />
                                     <ul className="social">
@@ -197,7 +228,8 @@ export default class TeamArea extends Component {
                                     <p>UI/UX Designer</p>
                                 </div>
                             </div>
-                        </div>
+                       
+                        </OwlCarousel>
                     </div>
                 </section>
                 {/* End Team Area */}

@@ -8,6 +8,7 @@ jQuery(function ($) {
         } else {
             $(".main-nav").removeClass("is-sticky ");
         }
+        $('.all-case li.active').trigger('click');
     });
 
     // Sticky Nav2
@@ -23,6 +24,8 @@ jQuery(function ($) {
     jQuery('.mean-menu').meanmenu({
         meanScreenWidth: "991"
     });
+
+ 
 
     // Wow  JS
     new WOW({
@@ -50,51 +53,51 @@ jQuery(function ($) {
     });
 
     // Banner Image Slides
-	$('.banner-image-slider').owlCarousel({
-		loop: true,
-		nav: true,
-		dots: false,
-		autoplayHoverPause: true,
-		autoplay: true,
-		autoplayTimeout: 2500,
-		autoHeight: true,
-		items: 1,
-		animateOut: 'fadeOut',
-        margin: 0,
-        navText: [
-            "<i class='flaticon-left-arrow'></i>", 
-            "<i class='flaticon-next-1'></i>"
-        ],
-	});
+	// $('.banner-image-slider').owlCarousel({
+	// 	loop: true,
+	// 	nav: true,
+	// 	dots: false,
+	// 	autoplayHoverPause: true,
+	// 	autoplay: true,
+	// 	autoplayTimeout: 2500,
+	// 	autoHeight: true,
+	// 	items: 1,
+	// 	animateOut: 'fadeOut',
+    //     margin: 0,
+    //     navText: [
+    //         "<i class='flaticon-left-arrow'></i>", 
+    //         "<i class='flaticon-next-1'></i>"
+    //     ],
+	// });
 
     // Home Team Slider
-    $('.home-team-slider').owlCarousel({
-        loop: true,
-        margin: 20,
-        dots: true,
-        autoplay: false,
-        autoplayHoverPause: true,
-        responsive: {
-            0: {
-                items: 1,
-            },
-            575: {
-                items: 2,
-            },
-            576: {
-                items: 2,
-            },
-            768: {
-                items: 3,
-            },
-            992: {
-                items: 3,
-            },
-            1200: {
-                items: 4,
-            }
-        }
-    });
+    // $('.home-team-slider').owlCarousel({
+    //     loop: true,
+    //     margin: 20,
+    //     dots: true,
+    //     autoplay: false,
+    //     autoplayHoverPause: true,
+    //     responsive: {
+    //         0: {
+    //             items: 1,
+    //         },
+    //         575: {
+    //             items: 2,
+    //         },
+    //         576: {
+    //             items: 2,
+    //         },
+    //         768: {
+    //             items: 3,
+    //         },
+    //         992: {
+    //             items: 3,
+    //         },
+    //         1200: {
+    //             items: 4,
+    //         }
+    //     }
+    // });
 
     // Home Slider
     // $(".home-slider").owlCarousel({
@@ -130,51 +133,51 @@ jQuery(function ($) {
     // });
 
     // Client Wrap
-	$('.client-wrap').owlCarousel({
-		loop:true,
-		margin:30,
-		nav:false,
-		mouseDrag: true,
-		items:1,
-		dots: false,
-		autoHeight: true,
-		autoplay: true,
-		smartSpeed: 800,
-		autoplayHoverPause: true,
-		center: false,
-		responsive:{
-			0:{
-				items:1,
-				margin: 10,
-			},
-			576:{
-				items:1,
-			},
-			768:{
-				items:2,
-				margin: 20,
-			},
-			992:{
-				items:2,
-			},
-			1200:{
-				items:2,
-			}
-		}
-    });
+	// $('.client-wrap').owlCarousel({
+	// 	loop:true,
+	// 	margin:30,
+	// 	nav:false,
+	// 	mouseDrag: true,
+	// 	items:1,
+	// 	dots: false,
+	// 	autoHeight: true,
+	// 	autoplay: true,
+	// 	smartSpeed: 800,
+	// 	autoplayHoverPause: true,
+	// 	center: false,
+	// 	responsive:{
+	// 		0:{
+	// 			items:1,
+	// 			margin: 10,
+	// 		},
+	// 		576:{
+	// 			items:1,
+	// 		},
+	// 		768:{
+	// 			items:2,
+	// 			margin: 20,
+	// 		},
+	// 		992:{
+	// 			items:2,
+	// 		},
+	// 		1200:{
+	// 			items:2,
+	// 		}
+	// 	}
+    // });
     
     // Services Item Wrap
-	$('.services-item-wrap').owlCarousel({
-		loop: true,
-		nav: false,
-		dots: false,
-		autoplayHoverPause: true,
-		autoplay: true,
-		autoplayTimeout: 2500,
-		autoHeight: true,
-		items: 1,
-		margin: 0,
-	});
+	// $('.services-item-wrap').owlCarousel({
+	// 	loop: true,
+	// 	nav: false,
+	// 	dots: false,
+	// 	autoplayHoverPause: true,
+	// 	autoplay: true,
+	// 	autoplayTimeout: 2500,
+	// 	autoHeight: true,
+	// 	items: 1,
+	// 	margin: 0,
+	// });
 
     // Gallery
     $('.image-pop').magnificPopup({
@@ -270,9 +273,10 @@ jQuery(function ($) {
 
     // Isotope Filter
     $('.case-list').isotope({
-        itemSelector: '.item'
+         itemSelector: '.item'
     });
     $('.all-case li').on('click', function() {
+        debugger;
         $('.all-case li').removeClass('active');
         $(this).addClass('active');
         var selector = $(this).attr('data-filter');

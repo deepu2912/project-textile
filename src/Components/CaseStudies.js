@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
+
 export default class CaseStudies extends Component {
     _onParent = (e) => {
         e.preventDefault()
     }
+ 
     render() {
         return (
             <>
@@ -24,7 +26,7 @@ export default class CaseStudies extends Component {
                                 <li data-filter=".cyber"><span>Cyber Security</span></li>
                             </ul>
                         </div>
-                        <div className="row case-list">
+                        <div className="row case-list" >
                             <div className="col-lg-4 col-sm-6 item cyber">
                                 <div className="single-case">
                                     <div className="case-img">
