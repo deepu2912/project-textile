@@ -10,9 +10,10 @@ export default class NotFound extends Component {
         this.state = { width: 0, height: 0 };
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
       }
+  
       
       componentDidMount() {
-  
+        window.scrollTo(0, 0)
         window.addEventListener('load', this.updateWindowDimensions);  
       }
      
@@ -23,14 +24,14 @@ export default class NotFound extends Component {
 
     render() {
 
-
+debugger;
         let button = <Link to="/" className="box-btn"> Return To Home Page </Link>;
 
         
         if(this.state.width === 0){
-            button = <a href="/" className="box-btn"> Return To Home Page  </a>;
+            button = <Link to="/" className="box-btn"> Return To Home Page </Link>;
         } 
-        else if(this.state.width < 450){
+        else if(this.state.width <= 990){
             button = <a href="/" className="box-btn"> Return To Home Page  </a>;
         }
 

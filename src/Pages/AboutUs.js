@@ -7,6 +7,9 @@ import ClientArea from '../Components/ClientArea'
 import Navbar from '../Components/Navbar'
 
 export default class Aboutus extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+      }
     render() {
         return (
             <>
