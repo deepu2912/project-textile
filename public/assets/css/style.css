@@ -5151,7 +5151,8 @@ Error Area Css
 .error-area {
   position: relative;
   text-align: center;
-  height: 100vh;
+  /* height: 100vh; */
+  height: 625px;
   max-width: 650px;
   margin: auto;
   padding: 50px 0;

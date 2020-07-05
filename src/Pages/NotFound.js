@@ -55,7 +55,7 @@ export default class NotFound extends Component {
                             </div>
                         </div>
                     </div>
-                </div>;
+                </div>
                 {
                     /* End 404 Error */
                 }
