@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 export default class Header extends Component {
     render() {
@@ -8,7 +9,13 @@ export default class Header extends Component {
                 <header className="header-area header-2">
                     <div className="container">
                         <div className="row align-items-center">
-                            <div className="col-lg-8 col-md-7 text-left">
+                            <div className="col-lg-2 col-sm-0">
+                                <div className="logo">
+                                    <Link to="/"><img src="assets/images/logo.png" alt="logo" /></Link>
+                                    {/* <a href="index-2.html"><img src="assets/images/logo.png" alt="logo" /></a> */}
+                                </div>
+                            </div>
+                            <div className="col-lg-8 col-sm-8 text-right pr-0">
                                 <div className="header-content-right">
                                     <ul className="header-contact">
                                         <li><a href="tel:+1123456789"><i className="bx bxs-phone-call" /> +91 7837967982</a></li>
@@ -16,11 +23,11 @@ export default class Header extends Component {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="col-lg-4 col-md-5 text-right">
+                            <div className="col-lg-2 col-sm-4 text-right pl-0">
                                 <div className="header-content-right">
                                     <ul className="header-social">
 
-                                        <li> 
+                                        <li>
                                             <a href="https://www.facebook.com/kristi.lopez.73932" rel="noopener noreferrer" target="_blank"><i className="bx bxl-facebook" /></a>
                                         </li>
                                         <li>
