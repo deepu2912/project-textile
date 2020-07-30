@@ -14,7 +14,7 @@ export default class Aboutus extends Component {
         return (
             <>
             <Navbar></Navbar> 
-                <TitleArea pageName="About"></TitleArea> 
+                <TitleArea pageName="About" pageTile={[<b>Welcome!! </b> , " We are Quality Digitizing services and are having 10+ years’ experience in this field of SEO (Search Engine Optimization)."]} ></TitleArea> 
                 <CompanyArea></CompanyArea>
                 <TechnologyArea></TechnologyArea>
                 <FeaturedArea></FeaturedArea>
@@ -23,3 +23,5 @@ export default class Aboutus extends Component {
         )
     }
 }
+
+ 

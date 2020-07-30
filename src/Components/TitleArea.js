@@ -2,19 +2,15 @@ import React, { Component } from 'react'
 
 export default class TitleArea extends Component {
     render() {
+       
         return (
             <> 
                 {/* Start Page Title Area */}
                 <div className="page-title-area">
                     <div className="container">
                         <div className="page-title-content">
-                            <h2>{this.props.pageName}</h2>
-                            <ul>
-                                <li>
-                                    <a href="/"> Home </a>
-                                </li>
-                                <li className="active">{this.props.pageName}</li>
-                            </ul>
+                            <h2>{this.props.pageName}</h2> 
+                            <p style={{color: '#fff5f5bd'}}>{this.props.pageTile}</p>
                         </div>
                     </div>
                     <div className="page-shape">

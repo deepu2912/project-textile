@@ -19,18 +19,18 @@ export default class TechnologyArea extends Component {
                             </div>
                             <div className="col-lg-6">
                                 <div className="technology-content">
-                                    <h2>Updated Technology</h2>
-                                    <p>You need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with.</p>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going There are many variations of passages of Lorem Ipsum available, but the.</p>
-                                    <a href="contact.html" className="box-btn">
-                                        Contact Us
-                </a>
+                                  
+                                    <h2>Why select us as your designers?</h2>
+                                    <p>There are so many reasons that will tell you why to select us as your designers. We are the designers of premium quality and provide perfect digitizing services to our clients and we ensure enhanced details, less thread breakage, sharper designs. Quality Digitizing Company works at a very faster rate because we don’t want our clients to suffer because of us. Therefore, this kind of attitude of our company helps us in making the clients happy, getting more work, and proper administration. Ergo, we would like to give a heartily thanks to all the in-house experts working in our company as they are the ones who helped us in gaining this position in the digitizing industry.</p>
+
+                                    <p>We are the best service providers, so if you are thinking to place order then mail us at <a href="mailto:krstilopez01@gmail.com"><i className="bx bxs-envelope"></i> krstilopez01@gmail.com</a> </p>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
             </>
-        ) 
+        )
     }
 }

@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 export default class Footer extends Component {
     render() {
         return (
             <>
                 {/* Footer Area */}
-                <footer className="footer-area footer-area-2 pt-100">
-                    <div className="container">
+                <footer className="footer-area">  {/* footer-area-2 pt-100 */}
+                    {/* <div className="container">
                         <div className="row">
                             <div className="col-lg-4 col-md-6">
                                 <div className="content">
@@ -81,22 +81,25 @@ export default class Footer extends Component {
                             </div>
                         </div>
                     </div>
+                    */}
                     <div className="copy-area">
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-6">
-                                    <ul className="menu">
+                                  {/*   <ul className="menu">
                                         <li><Link to="/"> Home</Link>  </li>
                                         <li><Link to="/about">About</Link></li>
                                         <li><Link to="/solutions">Solutions</Link></li>
                                         <li><Link to="/case">Case Studies</Link></li>
                                         <li><Link to="/blog">Blog</Link></li>
                                         <li><Link to="/contact">Contact</Link></li>
-                                    </ul>
-                                </div>
+                                    </ul>*/}
+                                </div> 
                                 <div className="col-lg-6 text-right">
                                     <p>
-                                        Copyright @2020 ###. All Rights Reserved by 
+                                     
+                                Copyright @2020 Quality Digitizing Services
+                            
                                     </p>
                                 </div>
                             </div>

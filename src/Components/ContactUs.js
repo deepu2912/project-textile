@@ -7,11 +7,7 @@ export default class ContactUs extends Component {
                 {/* Home Contact Area */}
                 <section className="home-contact-area home-2-contact ptb-100">
                     <div className="container">
-                        <div className="section-title">
-                            <span>Contact Us</span>
-                            <h2>Let Us Know About Your Project Idea!</h2>
-                            <p>It is a long established fact that a reader will be distracted by the rea dable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more.</p>
-                        </div>
+                
                         <div className="row">
                             <div className="col-lg-6 col-md-6">
                                 <div className="content">
