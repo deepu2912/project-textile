@@ -3,6 +3,10 @@ import Navbar from '../Components/Navbar'
 import TitleArea from '../Components/TitleArea'
 
 export default class Pricing extends Component {
+
+    componentDidMount() {
+        window.scrollTo(0, 0)
+      }
     render() {
         return (
             <>

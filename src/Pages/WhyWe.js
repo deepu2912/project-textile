@@ -3,6 +3,9 @@ import Navbar from '../Components/Navbar'
 import TitleArea from '../Components/TitleArea'
 
 export default class WhyWe extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+      }
     render() {
         return (
             <>

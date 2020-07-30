@@ -4,6 +4,9 @@ import TitleArea from '../Components/TitleArea'
  import VectorServiceType from '../Components/VectorServiceType'
 
 export default class Vector extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+      }
     render() {
         return (
             <>
