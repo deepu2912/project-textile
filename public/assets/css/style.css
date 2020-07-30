@@ -6301,3 +6301,23 @@ Banner Area Three Style
   opacity: 1;
 }
  
+.social-css{
+  font-size: 18px !important;
+  color: #fff !important;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #fff;
+  background-color: #1d42d9;
+  border-radius: 50%;
+  line-height: 37px;
+  text-align: center;
+  -webkit-transition: 0.3s!important;
+  transition: 0.3s!important;
+  transition: 0.3s!important;
+}
+
+.logo-img{ 
+    width: 210px !important;
+    max-width: 200% !important;
+    height:  50px !important  ;
+}

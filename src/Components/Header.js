@@ -6,12 +6,14 @@ export default class Header extends Component {
         return (
             <>
                 {/* Header Area */}
-                <header className="header-area header-2">
+                <header className="header-area">
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-lg-2 col-sm-0">
                                 <div className="logo">
-                                    <Link to="/"><img src="assets/images/logo.png" alt="logo" /></Link>
+                                    <Link to="/"> 
+                                    <img src="assets/images/logo.png" alt="logo"  className="logo-img" />
+                                    </Link>
                                     {/* <a href="index-2.html"><img src="assets/images/logo.png" alt="logo" /></a> */}
                                 </div>
                             </div>
@@ -25,13 +27,12 @@ export default class Header extends Component {
                             </div>
                             <div className="col-lg-2 col-sm-4 text-right pl-0">
                                 <div className="header-content-right">
-                                    <ul className="header-social">
-
+                                    <ul className="header-social"> 
                                         <li>
-                                            <a href="https://www.facebook.com/kristi.lopez.73932" rel="noopener noreferrer" target="_blank"><i className="bx bxl-facebook" /></a>
+                                            <a href="https://www.facebook.com/kristi.lopez.73932" rel="noopener noreferrer" className="social-css" target="_blank"><i className="bx bxl-facebook" /></a>
                                         </li>
                                         <li>
-                                            <a href="https://twitter.com/KristiL15790733?lang=en" rel="noopener noreferrer" target="_blank"><i className="bx bxl-twitter" /></a>
+                                            <a href="https://twitter.com/KristiL15790733?lang=en" rel="noopener noreferrer" className="social-css" target="_blank"><i className="bx bxl-twitter" /></a>
                                         </li>
                                         {/* <li>
                                             <a href="https://www.facebook.com" rel="noopener noreferrer" target="_blank"> <i className="bx bxs-envelope" /></a>
