@@ -4,11 +4,9 @@ import OwlCarousel from 'react-owl-carousel';
 
 
 export default class Slider extends Component {
-    _onParent = (e) => {
-        e.preventDefault()
-    }
-
-
+    _onParent = e => {
+        e.preventDefault();
+    } ;
     render() {
 
         const options = {
