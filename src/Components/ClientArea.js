@@ -43,7 +43,7 @@ export default class ClientArea extends Component {
         return (
             <>
                 {/* Start Client Area */}
-                <section className="client-area ptb-100 bg-color">
+                <section className="client-area ptb-100">
                     <div className="container">
                         <div className="section-title">
                             <span>Testimonials</span>
