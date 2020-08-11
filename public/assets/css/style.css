@@ -5252,6 +5252,7 @@ Contact Area Css
 }
 
 .home-contact-area #msgSubmit {
+  margin-top: 10px;
   text-align: center;
 }
 
