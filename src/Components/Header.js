@@ -20,7 +20,7 @@ export default class Header extends Component {
                             <div className="col-lg-8 col-sm-8 text-right pr-0">
                                 <div className="header-content-right">
                                     <ul className="header-contact">
-                                        <li><a href="tel:+1123456789"><i className="bx bxs-phone-call" /> +91  7973847720</a></li>
+                                        <li><a href="tel:+917973847720"><i className="bx bxs-phone-call" /> +91  7973847720</a></li>
                                         <li><a href="mailto:kristilopez01@gmail.com"><i className="bx bxs-envelope" /> kristilopez01@gmail.com</a></li>
                                     </ul>
                                 </div>
