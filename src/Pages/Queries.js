@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Moment from 'react-moment';
- 
+import Moment from 'react-moment'
+
 
 export default class Queries extends Component {
 
@@ -8,7 +8,18 @@ export default class Queries extends Component {
         query: []
     }
 
-    componentDidMount() {
+    deleteQuery = index => {
+        fetch('https://node-deep.herokuapp.com/queries/' + index, {
+            method: 'DELETE',
+        })
+            .then(res => res.text())  
+            .then(res =>{
+                this.updateList()
+            })
+    }
+
+    updateList=()=>{
+        debugger;
         fetch('https://node-deep.herokuapp.com/queries').then(res => res.json()).then(
             res => {
                 console.log(res);
@@ -19,6 +30,9 @@ export default class Queries extends Component {
         ).catch(err => {
             alert('There is some error in fetching Api. please try again after sometime or contact support')
         })
+    }
+    componentDidMount() {
+        this.updateList()
     }
 
     render() {
@@ -37,19 +51,21 @@ export default class Queries extends Component {
                                         <th>Subject</th>
                                         <th>Message</th>
                                         <th>Date</th>
+                                        <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     {
                                         this.state.query.map((query, index) => {
                                             return <tr key={index}>
-                                                 <td>{++index}</td>
+                                                <td>{index + 1}</td>
                                                 <td>{query.name}</td>
                                                 <td>{query.cphone}</td>
                                                 <td>{query.cemail}</td>
                                                 <td>{query.csubject}</td>
                                                 <td>{query.cmessage}</td>
                                                 <td><Moment date={query.Date} /></td>
+                                                <td><img src="assets/images/client/delete.png" style={{ "width": "30px", "cursor": "pointer" }} onClick={() => this.deleteQuery(index)} alt="Delete"></img></td>
                                             </tr>
                                         })
                                     }
