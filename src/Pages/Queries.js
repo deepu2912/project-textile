@@ -9,17 +9,20 @@ export default class Queries extends Component {
     }
 
     deleteQuery = index => {
-        fetch('https://node-deep.herokuapp.com/queries/' + index, {
-            method: 'DELETE',
-        })
-            .then(res => res.text())  
-            .then(res =>{
-                this.updateList()
+        if (window.confirm("Delete the item?")) {
+            fetch('https://node-deep.herokuapp.com/queries/' + index, {
+                method: 'DELETE',
             })
+                .then(res => res.text())  
+                .then(res =>{
+                    this.updateList()
+                })
+        }
+      
     }
 
     updateList=()=>{
-        debugger;
+         
         fetch('https://node-deep.herokuapp.com/queries').then(res => res.json()).then(
             res => {
                 console.log(res);
