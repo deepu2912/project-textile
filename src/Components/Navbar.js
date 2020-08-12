@@ -11,9 +11,9 @@ export default class Navbar extends Component {
                 {/*Navbar Area */}
                 <div className="navbar-area">
                     <div className="mobile-nav">
-                        <Link to="/" className="logo">
+                        <a href="/" className="logo">
                             <img src="assets/images/logo.png" alt="logo" />
-                          </Link>
+                          </a>
                     </div>
                     <div className="main-nav">
                         <div className="container">

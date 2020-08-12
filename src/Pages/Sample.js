@@ -7,7 +7,7 @@ export default class Sample extends Component {
         return (
             <div>
                 <Navbar></Navbar>
-                <TitleArea pageName="Samples"></TitleArea>
+                <TitleArea pageName="Samples" pageTile={["All the designs and logos provided below are having properties of the respective firms and are one of the top-best designs of our company. Ergo, the designs provided below are protected from copyright infringements. If anyone will try to copy then actions will be taken against the concerned. All of the designs provided are just the samples, they are not at all for the purpose of sale or distribution. Just check our samples and then think if you want to take our services or not. \n If you like the work, then give an opportunity to work for you. Just mail us at ", <a href ="mailto:kristilopez01@gmail.com">kristilopez01@gmail.com</a> ,", to place your order." ]}></TitleArea>
                 <div className="pt-100 pb-70">
                     <div className="container">
                         <div className="row">

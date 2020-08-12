@@ -54,13 +54,12 @@ export default class Slider extends Component {
                 <div className="row align-items-center">
                   <div className="col-lg-12 text-center">
                     <div className="slider-content one">
-                      <h1>Awesome Quality Embroidery Digitizing Sevices</h1>
+                      <h1>Embroidery Digitizing Sevices</h1>
                       <p>Affordable services, Best turnaround time, Low pricing</p>
                       <div className="slider-btn text-center">
                         <a href="tel:+917837967982" className="box-btn">Let’s Talk!</a>
                         <Link to='/embroidery' className="box-btn border-btn">Know More!</Link>
-                        {/* <a href="Embroidery.html" className="box-btn border-btn">Know More</a> */}
-                      </div>
+                       </div>
                     </div>
                   </div>
                 </div>
