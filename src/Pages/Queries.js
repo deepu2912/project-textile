@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import Moment from 'react-moment';
+ 
 
 export default class Queries extends Component {
 
@@ -34,6 +36,7 @@ export default class Queries extends Component {
                                         <th>Email Id</th>
                                         <th>Subject</th>
                                         <th>Message</th>
+                                        <th>Date</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -46,6 +49,7 @@ export default class Queries extends Component {
                                                 <td>{query.cemail}</td>
                                                 <td>{query.csubject}</td>
                                                 <td>{query.cmessage}</td>
+                                                <td><Moment date={query.Date} /></td>
                                             </tr>
                                         })
                                     }
