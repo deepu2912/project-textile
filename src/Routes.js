@@ -13,6 +13,7 @@ import Vector from './Pages/Vector';
 import Pricing from './Pages/Pricing';
 import WhyWe from './Pages/WhyWe';
 import ContactUs from './Pages/ContactUs';
+import Sample from './Pages/Sample';
  
  
 class Routes extends React.Component {
@@ -32,6 +33,7 @@ class Routes extends React.Component {
             <Route exact path="/pricing" component={Pricing}></Route>
             <Route exact path="/whywe" component={WhyWe}></Route>
             <Route exact path="/contact" component={ContactUs}></Route> 
+            <Route exact path="/sample" component={Sample}></Route> 
             <Route component={NotFound}></Route> 
           </Switch> 
          

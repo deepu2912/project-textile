@@ -8,7 +8,7 @@ export default class TitleArea extends Component {
                 {/* Start Page Title Area */}
                 <div className="page-title-area">
                     <div className="container">
-                        <div className="page-title-content">
+                        <div className="page-title-content" key="title">
                             <h2>{this.props.pageName}</h2> 
                             <p style={{color: '#fff5f5bd'}}>{this.props.pageTile}</p>
                         </div>
