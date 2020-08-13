@@ -1,19 +1,30 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import { Modal, Button, Form } from 'react-bootstrap';
 
 export default class Header extends Component {
+    state = {
+        modal: false
+    }
+
+    toggle = () => {
+        this.setState({
+            modal: !this.state.modal
+        });
+    }
     render() {
         return (
             <>
+
+
                 {/* Header Area */}
                 <header className="header-area">
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-lg-2 col-sm-0">
                                 <div className="logo">
-                                    <Link to="/"> 
-                                    
-                                    <img src="assets/images/logo.png" alt="logo"  className="logo-img" />
+                                    <Link to="/">
+                                        <img src="assets/images/logo.png" alt="logo" className="logo-img" />
                                     </Link>
                                     {/* <a href="index-2.html"><img src="assets/images/logo.png" alt="logo" /></a> */}
                                 </div>
@@ -28,7 +39,32 @@ export default class Header extends Component {
                             </div>
                             <div className="col-lg-2 col-sm-4 text-right pl-0">
                                 <div className="header-content-right">
-                                    <ul className="header-social"> 
+                                    <ul className="header-social">
+                                        <li> 
+                                            <button style={{'display':'none'}} onClick={this.toggle}>Login</button>
+                                              <Modal show={this.state.modal} onHide={this.toggle}>
+                                                <Modal.Header closeButton>
+                                                    <Modal.Title>Login</Modal.Title>
+                                                </Modal.Header>
+                                                <Modal.Body>
+                                                    <Form>
+                                                        <Form.Group controlId="formBasicEmail">
+                                                            <Form.Label>Username</Form.Label>
+                                                            <Form.Control type="text" placeholder="Enter username" /> 
+                                                        </Form.Group>
+
+                                                        <Form.Group controlId="formBasicPassword">
+                                                            <Form.Label>Password</Form.Label>
+                                                            <Form.Control type="password" placeholder="Password" />
+                                                        </Form.Group>
+                                                         <Button variant="primary" type="button">
+                                                            Submit
+                                                        </Button>
+                                                    </Form>
+                                                </Modal.Body>
+                                          
+                                            </Modal>
+                                        </li>
                                         <li>
                                             <a href="https://www.facebook.com/kristi.lopez.73932" rel="noopener noreferrer" className="social-css" target="_blank"><i className="bx bxl-facebook" /></a>
                                         </li>
@@ -48,6 +84,7 @@ export default class Header extends Component {
                     </div>
                 </header>
                 {/* End Header Area */}
+
             </>
         )
     }
