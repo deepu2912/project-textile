@@ -12,6 +12,7 @@ export default class Header extends Component {
                             <div className="col-lg-2 col-sm-0">
                                 <div className="logo">
                                     <Link to="/"> 
+                                    
                                     <img src="assets/images/logo.png" alt="logo"  className="logo-img" />
                                     </Link>
                                     {/* <a href="index-2.html"><img src="assets/images/logo.png" alt="logo" /></a> */}

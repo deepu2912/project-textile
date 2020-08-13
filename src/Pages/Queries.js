@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Moment from 'react-moment'
-
+ 
+import ReactHTMLTableToExcel from 'react-html-table-to-excel';
 
 export default class Queries extends Component {
 
@@ -8,21 +9,23 @@ export default class Queries extends Component {
         query: []
     }
 
+    
+
     deleteQuery = index => {
         if (window.confirm("Delete the item?")) {
             fetch('https://node-deep.herokuapp.com/queries/' + index, {
                 method: 'DELETE',
             })
-                .then(res => res.text())  
-                .then(res =>{
+                .then(res => res.text())
+                .then(res => {
                     this.updateList()
                 })
         }
-      
+
     }
 
-    updateList=()=>{
-         
+    updateList = () => {
+
         fetch('https://node-deep.herokuapp.com/queries').then(res => res.json()).then(
             res => {
                 console.log(res);
@@ -42,9 +45,13 @@ export default class Queries extends Component {
         return (
             <div>
                 <div className="info-area pt-100 pb-70">
+                    <div className="container" style={{ textAlign: 'right', padding: '9px' }}>
+                    <ReactHTMLTableToExcel className="btn btn-info"  table="tabledata"  filename="ReportExcel" 
+                    sheet="Sheet"    buttonText="Export excel" />  
+                    </div>
                     <div className="container">
                         <div className="row">
-                            <table className="table">
+                            <table className="table" id="tabledata">
                                 <thead>
                                     <tr>
                                         <th>S.no</th>
@@ -67,7 +74,7 @@ export default class Queries extends Component {
                                                 <td>{query.cemail}</td>
                                                 <td>{query.csubject}</td>
                                                 <td>{query.cmessage}</td>
-                                                <td><Moment date={query.Date} /></td>
+                                                <td><Moment format="D MMM YYYY hh:mm A" date={query.Date} /></td>
                                                 <td><img src="assets/images/client/delete.png" style={{ "width": "30px", "cursor": "pointer" }} onClick={() => this.deleteQuery(index)} alt="Delete"></img></td>
                                             </tr>
                                         })

@@ -10,6 +10,7 @@
     "moment": "^2.27.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-html-table-to-excel": "^2.0.0",
     "react-moment": "^0.9.7",
     "react-owl-carousel": "^2.3.1",
     "react-router-dom": "^5.2.0",
