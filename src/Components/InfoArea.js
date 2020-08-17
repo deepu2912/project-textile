@@ -9,7 +9,7 @@ export default class InfoArea extends Component {
         return (
             <>
                 {/* Info Area */}
-                <div className="info-area pt-100 pb-70">
+                <div className="info-area pt-100 pb-70 bg-color">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-4 col-sm-6">

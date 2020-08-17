@@ -4,12 +4,12 @@ export default class Area extends Component {
     render() {
         return (
             <>
-                <section className="home2-choose-area pt-100 pb-70">
+                <section className="home2-choose-area pt-100 pb-70 ">
                     <div className="container">
                         <div className="section-title">
-                            <span>Choose Paso</span>
+                            
                             <h2>We Achieved People’s Trust by Our Great Service</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                          
                         </div>
                         <div className="row">
                             <div className="col-lg-2 col-sm-4">

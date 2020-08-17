@@ -15,6 +15,9 @@ import WhyWe from './Pages/WhyWe';
 import ContactUs from './Pages/ContactUs';
 import Sample from './Pages/Sample';
 import Queries from './Pages/Queries';
+import Faq from './Pages/Faq';
+import Privacy from './Pages/Privacy';
+import TermsAndConditions from './Pages/TermsAndConditions';
  
  
 class Routes extends React.Component {
@@ -36,6 +39,9 @@ class Routes extends React.Component {
             <Route exact path="/contact" component={ContactUs}></Route> 
             <Route exact path="/sample" component={Sample}></Route> 
             <Route exact path="/queries" component={Queries}></Route> 
+            <Route exact path="/faq" component={Faq}></Route> 
+            <Route exact path="/privacy" component={Privacy}></Route>
+            <Route exact path="/termsandconditions" component={TermsAndConditions}></Route>
             <Route component={NotFound}></Route> 
           </Switch> 
          
