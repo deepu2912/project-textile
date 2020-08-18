@@ -57,9 +57,9 @@ export default class Footer extends Component {
                                 <div className="content">
                                     <h3>Quick Links</h3>
                                     <ul className="footer-list">
-                                        <li><Link to="/faq">FAQ</Link></li>
-                                        <li><Link to="/privacy">Privacy &amp; Policy</Link></li>
-                                        <li><Link to="/termsandconditions">Terms &amp; Conditions</Link></li>
+                                        <li><a href="/faq" target="_blank">FAQ</a></li>
+                                        <li><a href="/privacy" target="_blank">Privacy &amp; Policy</a></li>
+                                        <li><a href="/termsandconditions" target="_blank">Terms &amp; Conditions</a></li>
                                                                     </ul>
                                 </div>
                             </div>

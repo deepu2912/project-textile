@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 import TitleArea from '../Components/TitleArea'
+import Navbar from '../Components/Navbar'
 
 export default class Faq extends Component {
     render() {
         return (
             <div>
+                  <Navbar></Navbar>
                 <TitleArea pageName="FAQ"  ></TitleArea>
                 <section className="choose-area ptb-100">
                     <div className="container">
