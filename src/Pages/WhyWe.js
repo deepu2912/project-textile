@@ -16,7 +16,7 @@ export default class WhyWe extends Component {
                     <div className="container">
                         <div className="col-12">
                             <div className="services-details-text">
-                                <h2>QUALITY DIGITIZING SERVICES</h2>
+                                <h2>Quality Digitizing Services</h2>
                                 <p>Quality Digitizing Services is located in <b>Delhi, NCR (National Capital Region), India</b>. Since 2008, we are offering good digitizing services and vector art services to thousands of people. The position that we have gained today is all because of the satisfied customers of our company. If you are viewing our site, then you will feel delighted to hear that the cost of digitizing is quite affordable i.e. <b>$1 per 1000</b> stitches. Whereas the tariff for vector artwork starts from <b>$7</b> that is very low in the market. One of the best things is that the edits are completely free. So, what are you thinking come in touch with us today only for getting the best digitizing service.</p>
                                 <h3>Why choose our services?</h3>
                                 <p>First of all, a hearty thanks to all the experts that help us in making the perfect designs with their innovative and creative skills. Our services should be chosen because we properly know how to digitize the logo without damaging the original design during the process. Let’s discuss in details Why to choose us?</p>
