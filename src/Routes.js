@@ -18,6 +18,7 @@ import Queries from './Pages/Queries';
 import Faq from './Pages/Faq';
 import Privacy from './Pages/Privacy';
 import TermsAndConditions from './Pages/TermsAndConditions';
+import Admin from './Pages/Admin';
  
  
 class Routes extends React.Component {
@@ -42,6 +43,7 @@ class Routes extends React.Component {
             <Route exact path="/faq" component={Faq}></Route> 
             <Route exact path="/privacy" component={Privacy}></Route>
             <Route exact path="/termsandconditions" component={TermsAndConditions}></Route>
+            <Route exact path="/admin" component={Admin} ></Route>
             <Route component={NotFound}></Route> 
           </Switch> 
          

@@ -6354,3 +6354,8 @@ Banner Area Three Style
       background: #b30000;
   }
 
+  @media only screen and (min-width: 768px) and (max-width: 900px){
+#tabledata{
+  display: block;
+}
+  }
