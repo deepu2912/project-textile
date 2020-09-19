@@ -26,7 +26,7 @@ export default class Admin extends Component {
             alert('Please enter password')
         }
         else {
-            fetch('http://localhost:9000/checklogin/' + username + '/' + Password).then(res => res.text()).then(
+            fetch('https://node-deep.herokuapp.com/' + username + '/' + Password).then(res => res.text()).then(
                 res => {
                     this.setState({
                         login: res
